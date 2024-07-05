@@ -60,6 +60,7 @@ cd costs
 # instalando modulos
 npm install
 npm instal react-router-dom
+npm install react-icons
 
 #inicializando o projeto
 npm start
