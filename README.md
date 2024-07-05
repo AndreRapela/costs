@@ -1,70 +1,80 @@
-# Getting Started with Create React App
+<h1 align="center" style="font-weight: bold;">Costs 💰</h1>
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+<p align="center">
+    <img src="src/img/savings.svg" alt="Image Example" width="400px">
+</p>
 
-## Available Scripts
 
-In the project directory, you can run:
 
-### `npm start`
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+<h2 id="about">📌 About</h2>
 
-### `npm test`
+I developed a budget control and organization system using React, providing a user-friendly and responsive interface. The project stands out for its practical usability, ensuring that the system is intuitive for all types of users. Additionally, the code is modular, allowing for easy maintenance and future expansion.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+(link para página do projeto)
 
-### `npm run build`
+<h2 id="technologies">  💻Technologies</h2>
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+<div align="center" style="display: inline_block"><br>
+  <img src="https://skillicons.dev/icons?i=javascript,html,css,react" />
+</div>
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+<h2 id="started">🚀 Getting started</h2>
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+<h3>Local Routes</h3>
 
-### `npm run eject`
+he project will be initialized in the local browser at the URL:
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+`localhost:3000`
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+The project data will be available in the local browser at the route:
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+`localhost:5000`
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
 
-## Learn More
+<h3>Prerequisites</h3>
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+Here you list all prerequisites necessary for running your project. For example:
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+- [react](https://legacy.reactjs.org/)
+- [reactRouter](https://reactrouter.com/en/main)
+- [reactIcons](https://react-icons.github.io/react-icons/)
+- [node](https://nodejs.org/)
 
-### Code Splitting
+  
+<h3>Cloning</h3>
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
 
-### Analyzing the Bundle Size
+```bash
+git clone https://github.com/AndreRapela/costs.git
+```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+<h3>Starting</h3>
 
-### Making a Progressive Web App
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+```bash
+#Entrando no diretorio do projeto
+cd costs
 
-### Advanced Configuration
+# instalando modulos
+npm install
+npm instal react-router-dom
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+#inicializando o projeto
+npm start
+npm run backend
+```
 
-### Deployment
+<h2 id="routes">📍 Application Routes</h2>
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
 
-### `npm run build` fails to minify
+| route               | description                                          
+|----------------------|-----------------------------------------------------
+| <kbd>/</kbd>     | Home page
+| <kbd>/company</kbd>     | page for company information
+| <kbd>/contact</kbd>     | page for company contacts 
+| <kbd>/newproject</kbd>     | The new project creation  
+| <kbd>/projects</kbd>     | page for viewing and editing created projects 
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+
