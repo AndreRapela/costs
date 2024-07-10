@@ -61,6 +61,7 @@ cd costs
 # instalando modulos
 npm install
 npm instal react-router-dom
+npm install react-icons
 
 #instalando backend temporário
 npm install -g json-server
