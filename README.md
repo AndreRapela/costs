@@ -40,6 +40,7 @@ Here you list all prerequisites necessary for running your project. For example:
 - [react](https://legacy.reactjs.org/)
 - [reactRouter](https://reactrouter.com/en/main)
 - [reactIcons](https://react-icons.github.io/react-icons/)
+- [json-server](https://www.npmjs.com/package/json-server)
 - [node](https://nodejs.org/)
 
   
@@ -60,6 +61,9 @@ cd costs
 # instalando modulos
 npm install
 npm instal react-router-dom
+
+#instalando backend temporário
+npm install -g json-server
 
 #inicializando o projeto
 npm start
