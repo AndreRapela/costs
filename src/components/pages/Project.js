@@ -1,5 +1,5 @@
 import styles from './Project.module.css'
-import {parse, v4 as uuidv4} from 'uuid'
+import { v4 as uuidv4} from 'uuid'
 
 import { useParams } from 'react-router-dom'
 import { useState,useEffect } from 'react'
@@ -37,13 +37,17 @@ function Project(){
        },3000)
     },[id])
 
+
+
     function toggleProjectForm(){
         setShowProjectForm(!showProjectForm)
     }
 
+
     function toggleServiceForm(){
         setShowServiceForm(!showServiceForm)
     }
+
 
     function createService(){
         setMessage('')
@@ -82,9 +86,11 @@ function Project(){
             .catch(erro => console.log(erro))
     } 
 
+
+
     function editPost(project) {
         setMessage('')
-        //gggg
+        
         if(project.budget < project.cost){
             setMessage('O orçamento não pode ser menor que o custo do projeto!')
             setType('error')
@@ -108,8 +114,31 @@ function Project(){
         })
     }
 
-    function removeService(){
-        
+
+
+    function removeService(id,cost){
+        const servicesUpdated = project.services.filter(
+            (service) =>service.id !== id
+            )
+
+        const projectUpdated = project
+        projectUpdated.services = servicesUpdated
+        projectUpdated.cost = parseFloat(projectUpdated.cost) - parseFloat(cost)
+
+        fetch(`http://localhost:5000/projects/${projectUpdated.id}`,{
+            method:'PATCH',
+            headers: {
+                'Content-Type' : 'application/json'
+            },
+            body: JSON.stringify(projectUpdated)
+        }).then((resp)=>resp.json())
+        .then(data => {
+            setProject(projectUpdated)
+            setServices(servicesUpdated)
+            setMessage('Projeto removido com sucesso!')
+            setType('success')      
+        })
+        .catch(e=> console.log(e))
     }
 
     return(<>{project.name ?( 
@@ -128,7 +157,7 @@ function Project(){
                         <span>Total do projeto: </span>{project.budget}
                     </p>
                     <p>
-                        <span>Total Utilizado: </span>R${project.cost}
+                        <span>Total Utilizado: </span>R${Math.abs(project.cost)}
                     </p>
                 </div>
             ):(

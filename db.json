@@ -1,17 +1,6 @@
 {
   "projects": [
     {
-      "id": "b39b",
-      "name": "rffff",
-      "budget": "3000",
-      "category": {
-        "id": "1",
-        "name": "Infra"
-      },
-      "cost": 0,
-      "services": []
-    },
-    {
       "id": "6ad8",
       "name": "projetoText",
       "budget": "50000",
@@ -30,7 +19,7 @@
         "id": "3",
         "name": "Design"
       },
-      "cost": 0,
+      "cost": 1000,
       "services": []
     },
     {
